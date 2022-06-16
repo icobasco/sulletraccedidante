@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/impress-demo.css"/> -->
+    <!-- <link rel="stylesheet" href="css/impress-common.css"/> -->
+    <link rel="stylesheet" href="./css/presentation.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sulle Tracce di Dante</title>
+</head> 
+
+<body>
+    <!-- Pannelli -->
+    <img id="pannelli-image-bottom-right"         class="bg" src="img/pannelli_2.jpeg">    <!-- basso dx  -->
+    <!-- Impianto -->
+    <img id="impianto-image-bottom-right"     class="bg" src="img/led_verde.jpeg">    <!-- basso dx  -->
+    <img id="impianto-image-bottom-left"     class="bg" src="img/led_rosso.jpeg">    <!-- basso sx  -->
+    <!-- Sito Web -->
+    <img id="sitoweb-image-top-right"          class="bg" src="img/sito_2.png">        <!-- alto dx  -->
+    <!-- Testi -->
+    <img id="testi-image-left"          class="bg" src="img/testi_sx.png">        <!-- sx centrato -->
+    <img id="testi-image-right"          class="bg" src="img/testi_dx.png">        <!-- dx centrato -->
+    <!-- QRCODE -->
+    <img id="qrcode-image-right"          class="bg" src="img/qrcode_pannello.jpg">        <!-- dx centrato -->
+
+
+    <div id="impress">
+        
+        <!-- 1.0 Home-->
+        <!-- Iniziale-->
+        <div class="step" id="home" data-x="1500" data-y="1500">
+            <img src="./img/sulletraccedidante_partner.png">
+        </div>
+
+        <!-- #################################################################### -->
+        <!-- 2.1 Pannelli -->
+        <!-- Applepie in basso a sx-->
+        <div class="step box" id="pannelli" data-x="1500" data-rel-y="1000" data-z="-7000" data-rotate="300" >
+            <h1>Pannelli</h1>
+            <h3>10 Pannelli 70x100cm</h3>
+            <p>Testi e grafica che <b>guidano</b> il visitatore alla scoperta della mostra.</p>
+        </div>
+        <!-- 2.2 QRCODE -->
+        <div class="step box" id="qrcode" data-rel-x="1000" data-rel-y="1500" data-rel-z="-7000" data-rel-rotate="300" >
+            <h1>QRCODE</h1>
+            <p>Ogni pannello reale apre al mondo digitale per una visita più <b>coinvolgente</b>.</p>
+            <img src="./img/qrcode.png">
+        </div>
+        <!-- 2.3 Gioco -->
+        <div class="step box" id="game" data-rel-x="1000" data-rel-y="1500" data-rel-z="-7000" data-rel-rotate="300" >
+            <h1>Il Gioco</h1>
+            <p>Una sfida interattiva, per una mostra più viva ed una sfida costruttiva.</p>
+            <a href="http://37.60.34.42:8081/"  target="__blank"><img src="./img/quizzone900.png"></a>
+        </div>
+        <!-- #################################################################### -->  
+        <!-- 3.1 Enti -->
+        <div class="step box" id="enti" data-rel-x="1000" data-rel-y="-1500"  data-rel-z="-7000" >
+            <h1>Enti</h1>
+            <p>Collaborazione con il territorio</p>
+            <img src="./img/loghi_3e4.png">
+        </div>
+        <!-- 3.2 IIS -->
+        <div class="step box" id="iis" data-rel-x="1000" data-rel-y="-1500" data-rotate="-270">
+            <h2>Un IIS</h2>
+            <h3>Competenze: tante e diverse</h3>
+            <table id="table_dante">
+                <tr>
+                  <th></th>
+                  <th>Denina</th>
+                  <th>Pellico</th>
+                  <th>Rivoira</th>
+                </tr>
+                <tr class="checkmark">
+                    <td>Testi</td>
+                    <td class="cell_green"></td>
+                    <td class="cell_green"></td>
+                    <td class="cell_green"></td>
+                </tr>
+                <tr class="checkmark">
+                    <td>Impianto</td>
+                    <td class="cell_red"></td>
+                    <td class="cell_red"></td>
+                    <td class="cell_green"></td>
+                </tr>
+                <tr class="checkmark">
+                    <td>Sito web</td>
+                    <td class="cell_green"></td>
+                    <td class="cell_red"></td>
+                    <td class="cell_green"></td>
+                </tr>
+                <tr class="checkmark">
+                    <td>Didattica Multimediale</td>
+                    <td class="cell_red"></td>
+                    <td class="cell_red"></td>
+                    <td class="cell_green"></td>
+                </tr> 
+            </table>
+        </div>
+        <!-- 3.2.1 Testi -->
+        <div class="step box moving" id="testi" data-rel-x="+1000" data-rel-y="-1500">
+            <h1>Testi</h1>
+            <p>Testi realizzati in collaborazione tra:
+                <ul>
+                    <li><a href="https://www.denina.it/" target="__blank">3B Elettro Itis Rivoira</a></li>
+                    <li><a href="https://www.denina.it/" target="__blank">3B AFM Denina</a></li>
+                    <li><a href="https://www.denina.it/" target="__blank">3A Pellico</a></li>
+                </ul>
+            </p> 
+            <p>Anna Campanella, Elisa Cottura,<br>Giulia Marengo e Marta Tamagno</p>
+        </div>
+        <!-- 3.2.2 Impianto -->
+        <div class="step box" id="impianto" data-rel-x="1000" data-rel-y="-1500" data-rotate="270">
+            <h1>Impianto</h1>
+            <p>Illuminazione della mostra e domotica interattiva</p>
+            <p>
+                <a href="https://www.denina.it/" target="__blank">5A ITIS Rivoira</a>      
+            </p>
+            <p>Massimo Peirone<br>Andrea Giordano</p>
+        </div>
+        <!-- 3.2.3 Didattica Multimediale -->
+        <div class="step box moving" id="percorso" data-rel-x="1000" data-rel-y="-1500" data-rotate-x="-40" data-rotate-y="10">
+            <h1>Percorso Interattivo e Multimediale</h1>
+            <p>
+                <li><a href="https://www.icleonardodavinci.edu.it/" target="__blank">Classi <b class="positioning">seconde</b> scuola secondaria I grado I.C. Leonardo da Vinci</a></li>
+                <li><a href="https://www.denina.it/" target="__blank"><b class="positioning"></b><b class="positioning">4C</b> e <b class="positioning">5C</b> Itis Informatica Rivoira</a></li>                
+            </p>
+            <p>Enrico Allione - Andrea Giordano</p>
+        </div>
+        <!-- 3.2.4 Sito Web -->
+        <!-- data-rotate: ruota verso la slide successiva -->
+        <div class="step box moving" id="sitoweb" data-rel-x="+1000" data-rel-y="-1500" data-rotate="-180">
+            <h1>Sito Web</h1>
+            <p><b class="rotating"><a href="http://www.sulletraccedidante.it" target="__blank">www.sulletraccedidante.it</a></b></p>
+            <p>Un sito che <b class="positioning">accompagna</b> e <b class="rotating">aiuta</b></p>
+            <p>
+                <li><a href="https://www.denina.it/" target="__blank">5A SIA Denina</a></li>
+                <li><a href="https://www.denina.it/" target="__blank">4C e 5C ITIS Informatica Rivoira</a></li>                
+            </p>
+            <p>Enrico Allione - Andrea Giordano<br>Gabriella Mitidieri</p>
+        </div>
+        <!-- 4.0 Disegno Dante -->
+        <!-- data-rotate: ruota verso la slide successiva -->
+        <div class="step box" id="disegno_dante" data-rel-x="+1000" data-rel-y="-1500" data-rotate="180">
+            <img class="img_reflected" src="./img/dante_in_frasi_finale.png">
+        </div>
+        <!-- #################################################################### --> 
+    </div>
+</body>
+
+<script src="js/impress.js"></script>"
+<script>
+    impress().init();
+</script>
+
+</html>
